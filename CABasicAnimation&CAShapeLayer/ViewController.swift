@@ -18,13 +18,12 @@ class ViewController: UIViewController {
         let buildLayer = CAShapeLayer()
         buildLayer.path = path.cgPath
                 
-        // 填滿形狀的顏色(預設會填滿黑色)
-        buildLayer.fillColor = CGColor(srgbRed: 1, green: 0, blue: 0, alpha: 1)
-        // 填滿形狀的顏色設為透明
+        // 填滿形狀的顏色設為透明(預設會填滿黑色)
         buildLayer.fillColor = UIColor.clear.cgColor
                 
         // 繪製線條的顏色
         buildLayer.strokeColor = UIColor.black.cgColor
+        
         // 繪製線條的粗細
         buildLayer.lineWidth = 8
         
